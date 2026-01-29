@@ -1,0 +1,19 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "TEAM_ID.com.demo.UniversalLinksDemo",
+                "paths": [
+                    "/product/*",
+                    "/products/*",
+                    "/user/*",
+                    "/profile/*",
+                    "/category/*",
+                    "/offer/*",
+                    "/promo/*"
+                ]
+            }
+        ]
+    }
+}
