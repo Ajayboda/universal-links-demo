@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Links Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .link-section {
+            background: #f5f5f5;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .link-section h3 {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .deep-link {
+            display: block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .deep-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        .deep-link:last-child {
+            margin-bottom: 0;
+        }
+        .link-path {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 4px;
+        }
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            border-radius: 12px;
+            padding: 16px;
+            font-size: 14px;
+            color: #856404;
+        }
+        .note strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 Universal Links Demo</h1>
+        <p class="subtitle">Tap any link below to open the iOS app</p>
+        
+        <div class="link-section">
+            <h3>📦 Products</h3>
+            <a href="/product/123" class="deep-link">
+                Premium Wireless Headphones
+                <div class="link-path">/product/123</div>
+            </a>
+            <a href="/product/456" class="deep-link">
+                Smart Fitness Watch
+                <div class="link-path">/product/456</div>
+            </a>
+        </div>
+
+        <div class="link-section">
+            <h3>👤 User Profiles</h3>
+            <a href="/user/john" class="deep-link">
+                John Doe's Profile
+                <div class="link-path">/user/john</div>
+            </a>
+            <a href="/profile/jane" class="deep-link">
+                Jane Smith's Profile
+                <div class="link-path">/profile/jane</div>
+            </a>
+        </div>
+
+        <div class="link-section">
+            <h3>🏷️ Categories & Offers</h3>
+            <a href="/category/electronics" class="deep-link">
+                Electronics Category
+                <div class="link-path">/category/electronics</div>
+            </a>
+            <a href="/offer/SAVE50" class="deep-link">
+                Special Offer: SAVE50
+                <div class="link-path">/offer/SAVE50</div>
+            </a>
+        </div>
+
+        <div class="note">
+            <strong>📱 Note:</strong>
+            These links will open the iOS app if installed. Make sure to install the app on a real device first!
+        </div>
+    </div>
+</body>
+</html>
